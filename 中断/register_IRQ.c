@@ -159,6 +159,11 @@
             /*
              *  检查是否嵌套在另一个中断线程中，若是则总是出错？？？
              *  不能在中断线程中注册中断？？？
+             *  146 static inline bool irq_settings_is_nested_thread(struct irq_desc *desc)
+             *  147 {
+             *  148         return desc->status_use_accessors & _IRQ_NESTED_THREAD;
+             *  149 }
+             *  
              */
 928         nested = irq_settings_is_nested_thread(desc);
 929         if (nested) {
@@ -177,6 +182,13 @@
 938                  */
                     /*
                      * irq_nested_primary_handler将打印警告信息，并返回IRQ_NONE
+                     * 当多个中断共享某一根中断线时，我们可以把这个中断线作为父中断，
+                     * 共享该中断的各个设备作为子中断，在父中断的中断线程中决定和分发
+                     * 响应哪个设备的请求，在得出真正发出请求的子设备后，调用handle_nested_irq
+                     * 来响应中断。 
+                     * 父中断在初始化时必须通过irq_set_nested_thread函数明确告知中断子系统：这些
+                     * 子中断属于线程嵌套中断类型，这样驱动程序在申请这些子中断时，内核不会为它们
+                     * 建立自己的中断线程，所有的子中断共享父中断的中断线程。
                      */
 939                 new->handler = irq_nested_primary_handler;
 940         } else {
