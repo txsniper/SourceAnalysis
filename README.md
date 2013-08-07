@@ -1,22 +1,22 @@
-# 我的第一个GitHub项目
+# 脦脪碌脛碌脷脪禄赂枚GitHub脧卯脛驴
 
-这是项目 [SourceAnalysis](https://github.com/txsniper/SourceAnalysis) ，
-欢迎访问。
+脮芒脢脟脧卯脛驴 [SourceAnalysis](https://github.com/txsniper/SourceAnalysis) 拢卢
+禄露脫颅路脙脦脢隆拢
 
-这个项目的版本库是 **Git格式** ，在 Windows、Linux、Mac OS X
-平台都有客户端工具可以访问。虽然版本库只提供Git一种格式，
-但是你还是可以用其他用其他工具访问，如 ``svn`` 和 ``hg`` 。
+脮芒赂枚脧卯脛驴碌脛掳忙卤戮驴芒脢脟 **Git赂帽脢陆** 拢卢脭脷 Windows隆垄Linux隆垄Mac OS X
+脝陆脤篓露录脫脨驴脥禄搂露脣鹿陇戮脽驴脡脪脭路脙脦脢隆拢脣盲脠禄掳忙卤戮驴芒脰禄脤谩鹿漏Git脪禄脰脰赂帽脢陆拢卢
+碌芦脢脟脛茫禄鹿脢脟驴脡脪脭脫脙脝盲脣没脫脙脝盲脣没鹿陇戮脽路脙脦脢拢卢脠莽 ``svn`` 潞脥 ``hg`` 隆拢
 
-## 版本库地址
+## 掳忙卤戮驴芒碌脴脰路
 
-支持三种访问协议：
+脰搂鲁脰脠媒脰脰路脙脦脢脨颅脪茅拢潞
 
-* HTTP协议: `https://github.com/txsniper/SourceAnalysis.git` 。
-* Git协议: `git://github.com/txsniper/SourceAnalysis.git` 。
-* SSH协议: `ssh://git@github.com/txsniper/SourceAnalysis.git` 。
+* HTTP脨颅脪茅: `https://github.com/txsniper/SourceAnalysis.git` 隆拢
+* Git脨颅脪茅: `git://github.com/txsniper/SourceAnalysis.git` 隆拢
+* SSH脨颅脪茅: `ssh://git@github.com/txsniper/SourceAnalysis.git` 隆拢
 
-## 克隆版本库
+## 驴脣脗隆掳忙卤戮驴芒
 
-操作示例：
+虏脵脳梅脢戮脌媒拢潞
 
     $ git clone git://github.com/txsniper/SourceAnalysis.git
