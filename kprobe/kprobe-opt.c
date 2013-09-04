@@ -288,7 +288,7 @@
 1402		return ret;
 1403	}
 
-        /*
+    /*
 		 * 探测点地址相同的kprobe结构通过kprobe结构中的双向链表list相连
 		 */
 1372	/* Check passed kprobe is valid and return kprobe in kprobe_table. */
